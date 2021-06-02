@@ -1,3 +1,4 @@
+//on scroll sticky header
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
       if (window.scrollY > 50) {
@@ -11,8 +12,19 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.paddingTop = '0';
       } 
   });
-}); 
+});
 
+
+//bootstrap scroll spy second way using js. if u use js no need to use data-attribute in body tag
+// document.addEventListener("DOMContentLoaded", function(){
+//   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+//     target: '#main_nav',
+//     offset: 200
+//   })
+// });
+
+
+//nav click to hide navbar
 $(function () {
 	$('.nav-link').on('click', function () {
 	        $('.navbar-collapse').collapse('hide');
